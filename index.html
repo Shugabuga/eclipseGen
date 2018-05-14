@@ -1,0 +1,54 @@
+<html>
+
+<head>
+  <title>Eclipse Repo Generator</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <div class="gen">
+    <h1>Eclipse Repo Generator</h1>
+    <br />
+
+    <div class="content-title">Basic Info</div>
+    <div class="input-group">
+      <div class="input">
+        <label>Repo Name</label><input type="text" edit-basic="reponame" />
+      </div>
+      <div class="input">
+        <label>Repo Logo</label><input type="text" edit-basic="repologo" />
+      </div>
+      <div class="input">
+        <label>Repo Author</label><input type="text" edit-basic="repoauthor" />
+      </div>
+      <div class="input">
+        <label>Repo Description</label><input type="text" edit-basic="repodesc" />
+      </div>
+
+    </div>
+
+    <br /><br />
+    <div class="content-title">Categories</div>
+    <br />
+    <a href="#" class="button" onclick="eclipseGen.addCategory();">Add Category</a>
+    <div class="categories"></div>
+
+
+  </div>
+
+  <div class="json">
+    <div id="editor"></div>
+  </div>
+
+
+  <script src="//ajaxorg.github.io/ace-builds/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+  <script src="//ajaxorg.github.io/ace-builds/src-min-noconflict/ext-language_tools.js" type="text/javascript" charset="utf-8"></script>
+  <script src="//cdn.rawgit.com/zenorocha/clipboard.js/v1.6.1/dist/clipboard.min.js"></script>
+
+  <script src="jquery.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
