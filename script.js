@@ -47,7 +47,6 @@ function eclipseGenCore() {
     app.ls.eclipse = JSON.stringify(arr, null, 2);
     app.log("Saved! Welcoming user...");
     app.loadEditor();
-    alert("Welcome to the Eclipse Repo Generator!");
 
 
 
@@ -98,7 +97,7 @@ function eclipseGenCore() {
               '<div class="games">'+
               '<div class="input-group">'+
               '<div class="input">'+
-              '<label>Edit Name</label><input type="text" value="'+value.categoryname+'" edit-category="'+btoa(key)+'" /><br><br><div class="button" onclick="eclipseGen.addGame(\''+btoa(key)+'\')">Add Game</div><div class="button" onclick="eclipseGen.deleteCategory(\''+btoa(key)+'\')">Delete Repo</div>'+
+              '<label>Edit Name</label><input type="text" value="'+value.categoryname+'" edit-category="'+btoa(key)+'" /><br><br><div class="button" onclick="eclipseGen.addGame(\''+btoa(key)+'\')">Add Game</div><div class="button" onclick="eclipseGen.deleteCategory(\''+btoa(key)+'\')">Delete Category</div>'+
               '</div>';
 
 
